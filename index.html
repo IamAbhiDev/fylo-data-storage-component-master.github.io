@@ -16,12 +16,38 @@
 
 <body>
 
-  You’ve used 815 GB of your storage
+  <main class="container">
+    <div class="container__card container__card--services">
+      <h1 class="container__card__heading"><img src="./images/logo.svg" alt="Fylo logo" class="container__card__logo">
+      </h1>
 
-  185 GB Left
+      <ul class="container__card__services">
+        <li><img src="./images/icon-document.svg" alt="document" class="container__card__services__icon"></li>
+        <li><img src="./images/icon-folder.svg" alt="folder" class="container__card__services__icon"></li>
+        <li><img src="./images/icon-upload.svg" alt="upload" class="container__card__services__icon"></li>
+      </ul>
+    </div>
 
-  0 GB
-  1000 GB
+    <div class="container__card container__card--storage">
+      <p class="container__card__message">You’ve used <span class="container__card__message__span">815 GB</span> of your
+        storage</p>
+
+      <div class="container__card__storage">
+        <div class="container__card__storage__progress-bar">
+          <div class="container__card__storage__progress-bar__progress">
+            <div class="container__card__storage__progress-bar__progress__pointer"></div>
+          </div>
+        </div>
+
+        <div class="container__card__storage__limit">
+          <p class="container__card__storage__limit__min">0 GB</p>
+          <p class="container__card__storage__limit__max">1000 GB</p>
+        </div>
+      </div>
+
+      <p class="container__card__label">185 <span class="container__card__label__span">GB Left</span></p>
+    </div>
+  </main>
 
 </body>
 
