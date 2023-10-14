@@ -48,3 +48,18 @@ select {
 
     --ff-primary: 'Raleway', sans-serif;
 }
+
+/*Basic Styles*/
+
+body {
+    background: url(../images/bg-mobile.png);
+    font-family: var(--ff-primary);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+}
