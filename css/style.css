@@ -53,6 +53,9 @@ select {
 
 body {
     background: url(../images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     font-family: var(--ff-primary);
     min-height: 100vh;
     display: flex;
@@ -62,4 +65,126 @@ body {
 
 ul {
     list-style: none;
+}
+
+/*Container*/
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    position: relative;
+    margin-bottom: 2.4rem;
+}
+
+.container__card {
+    border-radius: .6rem;
+}
+
+.container__card--services {
+    background: var(--dark-blue);
+    display: grid;
+    justify-content: start;
+    gap: 2.1rem;
+    border-top-right-radius: 6.5rem;
+    padding: 2.5rem 6.9rem 2.5rem 2.55rem;
+}
+
+.container__card__services {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container__card__services__service {
+    background: var(--very-dark-blue);
+    border-radius: .6rem;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__card--storage {
+    background: var(--dark-blue);
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2.1rem 2rem 3.4rem 2rem;
+}
+
+.container__card__message {
+    color: var(--pale-blue);
+    font-size: 14px;
+}
+
+.container__card__message__span {
+    font-weight: var(--bold);
+}
+
+.container__card__storage {
+    display: grid;
+    gap: .6rem;
+}
+
+.container__card__storage__progress-bar {
+    background-color: hsla(229, 57%, 11%, .5);
+    width: 115%;
+    height: 19px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 2.5px 2.5px 2.5px 2.5px;
+    justify-self: center;
+}
+
+.container__card__storage__progress-bar__progress {
+    height: 97%;
+    width: 75.5%;
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 15px;
+    animation: progress-bar 1s;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 .15rem 0 0;
+}
+
+.container__card__storage__progress-bar__progress__pointer {
+    background-color: white;
+    width: .6rem;
+    height: .6rem;
+    border-radius: 50%;
+}
+
+.container__card__storage__limit {
+    color: var(--pale-blue);
+    font-size: 13px;
+    font-weight: var(--bold);
+    width: 115%;
+    justify-self: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__card__label {
+    background-color: white;
+    font-size: 2.5rem;
+    font-weight: var(--bold);
+    border-radius: .6rem;
+    position: absolute;
+    bottom: -35px;
+    justify-self: center;
+    padding: .8rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.container__card__label__span {
+    color: var(--grayish-blue);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .05em;
 }
