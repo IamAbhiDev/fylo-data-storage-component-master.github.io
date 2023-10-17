@@ -188,3 +188,15 @@ ul {
     text-transform: uppercase;
     letter-spacing: .05em;
 }
+
+/*Animation*/
+
+@keyframes progress-bar {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 75.5%;
+    }
+}
