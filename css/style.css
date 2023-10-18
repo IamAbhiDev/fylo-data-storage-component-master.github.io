@@ -183,7 +183,7 @@ ul {
 }
 
 .container__card__label__span {
-    color: var(--grayish-blue);
+    color: #70727e;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: .05em;
