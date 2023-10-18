@@ -200,3 +200,67 @@ ul {
         width: 75.5%;
     }
 }
+
+/*Responsive Design - Desktop*/
+
+@media screen and (min-width:950px) {
+    body {
+        background: url(../images/bg-desktop.png);
+        background-color: var(--very-dark-blue);
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+
+    .container {
+        grid-template-columns: 1fr 1.53fr;
+        gap: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .container__card--services {
+        padding-right: 8.5rem;
+    }
+
+    .container__card--storage {
+        align-self: end;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1rem;
+        padding: 2.5rem 2.2rem 2.5rem;
+        position: relative;
+    }
+
+    .container__card__message {
+        justify-self: start;
+    }
+
+    .container__card__storage {
+        gap: .4rem;
+        align-self: stretch;
+    }
+
+    .container__card__storage__progress-bar {
+        width: 98.5%;
+        height: 20px;
+    }
+
+    .container__card__storage__limit {
+        width: 98.5%;
+    }
+
+    .container__card__label {
+        bottom: 128px;
+        right: 40px;
+        border-bottom-right-radius: 0;
+    }
+
+    .container__card__label::after {
+        content: "";
+        position: absolute;
+        top: 69px;
+        right: 0;
+        border-top: 25px solid #ffffff;
+        border-left: 25px solid transparent;
+    }
+}
